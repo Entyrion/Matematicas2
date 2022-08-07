@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Página de calculos</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-inverse navbar-light navbar-toggleable-md">
+            <a class="navbar-brand link text-center" href="calculos.html" style="font-size: 40px;">Página de calculos</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="navbar-nav">
+                    <div class="row">
+                        <div class="col-12">
+                            <a class="nav-item nav-link active ml-5 link" href="calculos.html">Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h2 class="text-center"> Cálculo de areas</h2>
+        <div class="row m-5">
+            <div class="col-6">
+                <h1 class="text-center">Cuadrado</h1>
+                <form class="form-group">
+                    <label>Ingresa el tamaño del lado:</label>
+                    <input type="number" id="numc" class="form-control">
+                    <button onclick="acuad();" type="button" id="btn1" class="btn btn-info btn-block mt-3">Calcular</button>
+                    <div id="rac" class="alert mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-6">
+                <h1 class="text-center">Rectangulo</h1>
+                <form class="form-group">
+                    <label>Ingresa el tamaño del primer lado:</label>
+                    <input id="numr1" type="number" class="form-control">
+                    <label>Ingresa el tamaño del segundo lado:</label>
+                    <input id="numr2" type="number" class="form-control">
+                    <button onclick="arect();" id="btnr" type="button" class="btn btn-info btn-block mt-3">Calcular</button>
+                    <div id="rar" class="alert mt-3" role="alert"></div>
+                </form>
+            </div>
+        </div>
+        <h2 class="text-center">Comprobaciones</h2>
+        <div class="row m-5">
+            <div class="col-6">
+                <h1 class="text-center">Descuento</h1>
+                <form class="form-group">
+                    <label>Ingresa el precio:</label>
+                    <input id="numd" type="number" class="form-control">
+                    <button onclick="desc();" type="button" class="btn btn-info btn-block mt-3">Calcular</button>
+                    <div id="rde" class="alert mt-3" role="alert"></div>
+                </form>
+            </div>
+            <div class="col-6">
+                <h1 class="text-center">Par o impar</h1>
+                <form class="form-group">
+                    <label>Ingresa el número:</label>
+                    <input id="numpoi" type="number" class="form-control">
+                    <button onclick="paroimpar();" type="button" class="btn btn-info btn-block mt-3">Verificar</button>
+                    <div class="alert mt-3" id="rpi" role="alert"></div>
+                </form>
+            </div>
+        </div>
+        <h2 class="text-center">Secuencia de números</h2>
+        <div class="row m-5">
+            <div class="col-6">
+                <h1 class="text-center">Números descendentes</h1>
+                <form class="form-group">
+                    <button onclick="ndesc();" type="button" class="btn btn-info btn-block mt-3">Mostrar números</button>
+                    <ul id="lisd" class="list-group"></ul>
+                </form>
+            </div>
+            <div class="col-6">
+                <h1 class="text-center">Números ascendentes</h1>
+                <form class="form-group">
+                    <button onclick="nasc();" type="button" class="btn btn-info btn-block mt-3">Mostrar números</button>
+                    <ul id="lisa" class="list-group"></ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+        <script src="../JS/calculos.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> 
+
+    </body>
+</html>
